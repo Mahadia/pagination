@@ -1,9 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+
 <?php 
-// Connexion au server MySQL
-$con = mysqli_connect("localhost", "root", "");
-// Sélection de la base coursphp
-$m = mysqli_select_db($con,"bdm");
+
+require_once('connexion.php');
 // on declare le nombre de page  
+
 $num_page=10;
 //test si la page est la valeur pas vide 
 if (isset($_GET["page"])) {
@@ -20,23 +28,38 @@ $sql = "SELECT * FROM texte LIMIT $start_from, $num_page";
 
 $result = mysqli_query($con,$sql); 
 ?> 
-<table>
-<tr>
-    <td><strong> ID </strong></td>
-    <td><strong> Mot </strong></td>
-  
-</tr>
+
+<body>
+    <div class="container">
+      <h6 style="text-align:center;">Tableau des données</h6>
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Documents</th>
+            <th> Mot </th>
+          </tr>
+        </thead>
+        <tbody>
+
 <?php 
 while ($row = mysqli_fetch_array($result)) { 
 ?> 
             <tr>
-            <td><?php echo $row['id_mot']; ?></td>   
-            <td><?php echo $row['mot']; ?></td>          
+            <td><?php echo $row['id_mot']; ?></td> 
+            <td><?php echo $row['documents']; ?></td>  
+            <td><?php echo $row['mot']; ?></td> 
+                     
             </tr>
+           
 <?php 
 }; 
 ?> 
-</table>
+ </tbody>
+      </table>
+    </div>
+  </body>
+</html>
 <?php 
 $sql = "SELECT * FROM texte"; 
 //Pour lancer la requete 
@@ -58,12 +81,12 @@ $preview = $_GET["page"]-1;
 // pour avancer d'un pas 
 $next = $_GET["page"]+1;
 // Afficher le lien précedent
-echo "<a href='index.php?page=$preview'>".'Précédent'."</a> "; // Goto 1st page  
+echo "<a href='index.php?page=$preview' >".'<strong>Précédent </strong>'."</a> "; // Goto 1st page  
 //boucle pour afficher toute les pages
 for ($i=1; $i<=$total_pages; $i++) { 
     // Afficher du nombre pages calculer précédemment
-            echo "<a href='index.php?page=".$i."'>".$i."</a> "; 
+            echo "<a href='index.php?page=".$i."'.>".$i."</a> "; 
 }; 
 // Afficher le lien suivant
-echo "<a href='index.php?page=$next'>".'Suivant'."</a> "; // Goto last page
+echo "<a href='index.php?page=$next'>".'<strong>Suivant</strong>'."</a> "; // Goto last page
 ?>
