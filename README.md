@@ -1,10 +1,10 @@
 # Technologies utilisés
 Utilisation dulangage PHP.
+
 Une Base de Données sous MySQL (PhpmyAdmin).
+
 Laragon (Serveur local)
 
-#Utilisation
-POur utiliser il suffit d'exporter les fichiers .SQL dans la base de données 
 
 
 #Affichage
