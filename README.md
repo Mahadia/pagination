@@ -8,8 +8,10 @@ Laragon (Serveur local)
 
 
 #Affichage
+
 Le code intégre l'ensemble des modules demandés : 
 - Téleverser une image sur la page
 - Affichage des photos en 6
 - Affichage de la pagination 
-![pagination](https://user-images.githubusercontent.com/70956278/159184354-f4538e47-2cbb-41d0-9305-f5fd5de15667.PNG)
+
+![image](https://user-images.githubusercontent.com/70956278/159369980-6b5186d1-cf46-4aa2-87fc-0227646cc995.png)
