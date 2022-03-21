@@ -7,7 +7,8 @@ Laragon (Serveur local)
 
 
 
-#Affichage
+
+
 
 Le code intégre l'ensemble des modules demandés : 
 - Téleverser une image sur la page
