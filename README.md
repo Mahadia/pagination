@@ -1,5 +1,5 @@
 # Technologies utilisés
-Utilisation dulangage PHP.
+Utilisation du langage PHP.
 
 Une Base de Données sous MySQL (PhpmyAdmin).
 
