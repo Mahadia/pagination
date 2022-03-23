@@ -26,3 +26,10 @@ Le code intégre l'ensemble des modules demandés :
 Affichage des images presentent dans les sous dossiers du dossier (doc) pour le sript lirerecudir.php
 
 ![image](https://user-images.githubusercontent.com/70956278/159804567-d1179f4d-b46c-415e-a55d-33c379d0e1f1.png)
+
+
+Après l'insertion des images dans la base de données :
+
+Voici l'affichage : 
+
+![image](https://user-images.githubusercontent.com/70956278/159805173-b378ea79-4c19-4a5b-9c3c-fe250c26d652.png)
