@@ -19,3 +19,8 @@ Le code intégre l'ensemble des modules demandés :
 
 ![image](https://user-images.githubusercontent.com/70956278/159370174-f139cf02-df0b-452e-affa-dfdbf3ac4389.png)
 
+
+#Pour la lecture récursive 
+Affichage des images presentent dans les sous dossiers du dossier (doc) pour le sript lirerecudir.php
+
+![image](https://user-images.githubusercontent.com/70956278/159804567-d1179f4d-b46c-415e-a55d-33c379d0e1f1.png)
