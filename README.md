@@ -23,3 +23,5 @@ Après etre connecté voici l'affichage pour l'administrateur
 
 ![image](https://user-images.githubusercontent.com/70956278/160950754-f62f39e2-d225-4f21-a198-f98b0c895106.png)
 
+Voici l'arborescance des dossiers: 
+![image](https://user-images.githubusercontent.com/70956278/160951064-f7d90443-f8de-493d-84b5-79aaf96b8b60.png)
