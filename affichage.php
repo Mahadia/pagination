@@ -1,4 +1,11 @@
 <?php  require_once('connexion.php'); 
+ // Initialiser la session
+ session_start();
+ // Vérifiez si l'utilisateur est connecté, sinon redirigez-le vers la page de connexion
+ if(!isset($_SESSION["email"])){
+   header("Location: login.php");
+   exit(); 
+ }
 $page = $_GET['page'];
 $sec = "SELECT * FROM image where id_img=$page";
 $resul = mysqli_query($con,$sec); 

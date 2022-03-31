@@ -1,3 +1,7 @@
+<head>
+   <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="css/style.css">
 <P>
 <B>DEBUTTTTTT DU PROCESSUS :</B>
 <BR>
@@ -23,10 +27,11 @@ function explorerDir($path)
 		//si la variable entree est different de . et de ..
 		if($entree != "." && $entree != "..")
 		{
+		
 			//si c'est un fichier .
 			if(is_dir($path."/".$entree))
 			{
-				
+				echo "+ <i class='far fa-folder-open'> </i> ".$entree." <br> ";
 				//sauvergarder la route dans une variable
 				$sav_path = $path;
 				//le path est égale à /entree
@@ -43,9 +48,22 @@ function explorerDir($path)
 				$validformat = array('jpg','png');
 				
 				$path_source = $path."/".$entree;
+			//	echo "<br>".$entree."<br>";
 				//Stocker dans une variable les extensions sans majuscule
 				$extension = strtolower(pathinfo($path_source,PATHINFO_EXTENSION));
-			
+				
+                switch ($extension) {
+					
+                    case 'txt':
+                        echo " <p>ㅤㅤㅤㅤ <i class='far fa-file'></i> ".$entree."</p>";
+                        break;
+                    case 'html':
+                        echo " <p>ㅤㅤㅤㅤ <i class='far fa-file-code'></i> ".$entree."</p>";
+                        break;
+                    default :
+                    echo " <p>ㅤㅤㅤㅤ <i class='far fa-image'></i> ".$entree."</p>";
+                    }
+				//echo " ㅤㅤㅤ<a href=''>".$entree."</a><br>";
 			//	si c'est l'un des extensions est présent dans le tableau
 			  if(in_array($extension,$validformat))
 
@@ -53,14 +71,17 @@ function explorerDir($path)
 					$con = mysqli_connect("localhost", "root", "");
                     // Sélection de la base coursphp
 					$m = mysqli_select_db($con,"bdm");
-					echo "<img width='300px' height='300px'  src='$path_source'>";
+					//echo "<img width='300px' height='300px'  src='$path_source'>";
+				
 					$size=filesize("$path_source");
 					
 					//Inserer dans la base de données
 					$sql = "INSERT INTO image(nom,taille,type1)values('$path_source',$size,'image/$extension')";  
-					$resul = mysqli_query($con,$sql); 
+					$resul = mysqli_query($con,$sql);
+		 
 					
 				}
+				
 				/* pour afficher les fichiers  pdf, html,txt 
 				if(in_array($extension,array('pdf','html','txt','htm'))){
 
@@ -72,9 +93,14 @@ function explorerDir($path)
 	closedir($folder);
 }
 
-//
-explorerDir($path);
 
+?>
+<div class="footer">
+    <?php
+    explorerDir($path);
+    ?>
+    </div>
+<?php
 ?>
 <P>
 <B>FIN DU PROCESSUS : </B>

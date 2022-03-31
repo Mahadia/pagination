@@ -58,6 +58,9 @@ while ($row = mysqli_fetch_array($result)) {
  </tbody>
       </table>
     </div>
+
+
+
   </body>
 </html>
 <?php 
@@ -90,3 +93,4 @@ for ($i=1; $i<=$total_pages; $i++) {
 // Afficher le lien suivant
 echo "<a href='index.php?page=$next'>".'<strong>Suivant</strong>'."</a> "; // Goto last page
 ?>
+

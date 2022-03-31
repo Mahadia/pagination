@@ -1,28 +1,17 @@
-# Technologies utilisés
+#Technologies utilisés :
+
 Utilisation du langage PHP.
 
-Une Base de Données sous MySQL (PhpmyAdmin).
+Une Base de Données local PhpMyAdmin est utilisé pour stocker les données.
 
-Laragon (Serveur local)
+J'ai utilisé Laragon pour serveur local.
 
+Pour utiliser ce site :
 
+Allez sur votre navigateur Web, puis à l'adresse localhost/le nom du fichier que vous avez mis sur WWW.
 
+Il faut créer un nouveau utilisateur et ensuite se rendre sur la page de connexion
 
+Il y a deux formulaires sur ce projet un pour se connecter et un autre pour créer un compte.
 
-
-Le code intégre l'ensemble des modules demandés : 
-- Téleverser une image sur la page
-- Affichage des photos en 6
-- Affichage de la pagination 
-
-![image](https://user-images.githubusercontent.com/70956278/159369980-6b5186d1-cf46-4aa2-87fc-0227646cc995.png)
-
-![image](https://user-images.githubusercontent.com/70956278/159370174-f139cf02-df0b-452e-affa-dfdbf3ac4389.png)
-
-
-#Pour la lecture récursive 
-
-
-Affichage des images presentent dans les sous dossiers du dossier (doc) pour le sript lirerecudir.php
-
-![image](https://user-images.githubusercontent.com/70956278/159804567-d1179f4d-b46c-415e-a55d-33c379d0e1f1.png)
+Pour tester la connexion créez votre utilisateur
