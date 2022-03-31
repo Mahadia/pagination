@@ -15,3 +15,11 @@ Il faut créer un nouveau utilisateur et ensuite se rendre sur la page de connex
 Il y a deux formulaires sur ce projet un pour se connecter et un autre pour créer un compte.
 
 Pour tester la connexion créez votre utilisateur
+
+Après etre connecté voici l'affichage pour l'administrateur
+
+![image](https://user-images.githubusercontent.com/70956278/160950677-9fcbb6ea-f4ad-4012-a43b-56135ea893d9.png)
+
+
+![image](https://user-images.githubusercontent.com/70956278/160950754-f62f39e2-d225-4f21-a198-f98b0c895106.png)
+
