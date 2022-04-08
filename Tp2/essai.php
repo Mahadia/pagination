@@ -24,8 +24,7 @@ $total_pages = ceil($total_records / $num_page);
 ?>
 <link rel="stylesheet" href="css/style.css">
 <h1 style="text-align:center;">Gestion des images</h1><br/>
-<h1 style="text-align:center;"><a href="login.php">Administrateur</a></h1><br/>
-<form method="post" action="essai.php" enctype="multipart/form-data" style="text-align:center;">
+<form method="post" action="essai.php" enctype="multipart/form-data" style="text-align:center;position:relative;top:-20px;">
      <label for="mon_fichier">Fichier (tous formats | max. 1 Mo) :</label><br />
      <input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
      <input type="file" name="mon_fichier" id="mon_fichier" /><br />
@@ -91,7 +90,7 @@ $result2 = mysqli_query($con,$sql2);
     foreach($result2 as $ligne)://Affiche les données present dans le tableau donné par le controller ?>
 
         <div class="divdata">
-            <img src="<?=$ligne['nom']?>" width="auto" height="150" style="padding:70px">
+            <img src="<?=$ligne['nom']?>" width="auto" height="150" style="padding:15px">
             <p> Titre : <?=$ligne['type1']?> </p>
         </div>
 
@@ -107,8 +106,6 @@ $result2 = mysqli_query($con,$sql2);
 </div>
   </body>
 </html>
-
-<h3 style="margin-bottom:70px;margin-left:30px;"></h3>
 <?php 
 // pour reculer d'un pas 
 $preview = $page-1;

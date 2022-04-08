@@ -28,7 +28,7 @@ $sql = "SELECT * FROM texte LIMIT $start_from, $num_page";
 
 $result = mysqli_query($con,$sql); 
 ?> 
-
+<center>
 <body>
     <div class="container">
       <h6 style="text-align:center;">Tableau des données</h6>
