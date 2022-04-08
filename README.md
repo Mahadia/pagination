@@ -13,11 +13,19 @@ Allez sur votre navigateur Web, puis à l'adresse localhost/le nom du fichier qu
 Il faut créer un nouveau utilisateur et ensuite se rendre sur la page de connexion
 
 Il y a deux formulaires sur ce projet un pour se connecter et un autre pour créer un compte.
-Page utilisateur
+
+#Page utilisateur
+
+
+![image](https://user-images.githubusercontent.com/70956278/162480707-984a4953-b7e8-4552-8007-128823012dfd.png)
+
+
+#Page de connexion
 
 ![image](https://user-images.githubusercontent.com/70956278/162480090-126884ea-bc5c-4903-a536-506a7eae59f8.png)
 
-<<<<<<< Mis à jour en amont
+
+
 Pour tester la connexion créez votre utilisateur
 
 Après etre connecté voici l'affichage pour l'administrateur
